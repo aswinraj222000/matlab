@@ -1,0 +1,21 @@
+function s=next_prime(n)
+
+f=1
+n=n+1
+while f==1
+    for i=2:n-1
+        v=0
+        if mod(n,i)==0
+            v=1
+            break
+        end
+    end
+    if v==0
+        f=0
+        s=n
+    else
+        n=n+1
+    end
+end
+end
+        
